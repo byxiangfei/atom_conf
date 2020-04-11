@@ -1,0 +1,67 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-11861-25377-atugcf.j6benlv7vi/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-11861-25377-atugcf.j6benlv7vi/package.tgz",
+        "spec": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-11861-25377-atugcf.j6benlv7vi/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/apm-install-dir-11861-25377-1cdog7h.pobcp4lsor"
+    ]
+  ],
+  "_from": "../d-11861-25377-atugcf.j6benlv7vi/package.tgz",
+  "_id": "language-cpp14@0.6.2",
+  "_inCache": true,
+  "_location": "/language-cpp14",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-11861-25377-atugcf.j6benlv7vi/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-11861-25377-atugcf.j6benlv7vi/package.tgz",
+    "spec": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-11861-25377-atugcf.j6benlv7vi/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11861-25377-atugcf.j6benlv7vi/package.tgz",
+  "_shasum": "3556bae4b7377119088d7073cd76dddef786ccbe",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-11861-25377-atugcf.j6benlv7vi/package.tgz",
+  "_where": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/apm-install-dir-11861-25377-1cdog7h.pobcp4lsor",
+  "bugs": {
+    "url": "https://github.com/jbw3/language-cpp14/issues"
+  },
+  "dependencies": {},
+  "description": "C++14 language support including new keywords, raw strings, digit separators, and binary literals",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/jbw3/language-cpp14#readme",
+  "keywords": [
+    "C++",
+    "C++11",
+    "C++14",
+    "doxygen",
+    "grammar",
+    "language",
+    "syntax"
+  ],
+  "license": "MIT",
+  "name": "language-cpp14",
+  "optionalDependencies": {},
+  "readme": "# language-cpp14 package\n\nSyntax highlighting for C++14.\n\n### Features\n\n* C++11 and C++14 keywords\n* Doxygen keywords\n* Binary literals\n* Digit separators\n* Raw strings\n* Attributes\n* C++ snippets\n\n### Doxygen\n\nThis package marks doxygen keywords. Most syntax themes will highlight them with the same color as keywords. To change this, add the following to your styles.less file:\n\n```less\natom-text-editor::shadow .keyword.other.documentation\n{\n    color: red;\n}\n```\n\n### License\n\nMIT\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbw3/language-cpp14.git"
+  },
+  "version": "0.6.2"
+}

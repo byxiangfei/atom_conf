@@ -1,0 +1,87 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-11861-23074-amwowv.q3tw6d2t9/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-11861-23074-amwowv.q3tw6d2t9/package.tgz",
+        "spec": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-11861-23074-amwowv.q3tw6d2t9/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/apm-install-dir-11861-23074-15aertn.eic1wtgldi"
+    ]
+  ],
+  "_from": "../d-11861-23074-amwowv.q3tw6d2t9/package.tgz",
+  "_id": "browser-plus@0.0.98",
+  "_inCache": true,
+  "_location": "/browser-plus",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-11861-23074-amwowv.q3tw6d2t9/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-11861-23074-amwowv.q3tw6d2t9/package.tgz",
+    "spec": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-11861-23074-amwowv.q3tw6d2t9/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11861-23074-amwowv.q3tw6d2t9/package.tgz",
+  "_shasum": "674383fb458e6ac0318d7911aa2482bc70ab2769",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-11861-23074-amwowv.q3tw6d2t9/package.tgz",
+  "_where": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/apm-install-dir-11861-23074-15aertn.eic1wtgldi",
+  "bugs": {
+    "url": "https://github.com/skandasoft/browser-plus/issues"
+  },
+  "dependencies": {
+    "JSON2": "~0.1.0",
+    "atom-space-pen-views": "~2.0.3",
+    "cheerio": "~0.20.0",
+    "jquery": "^2.1.4",
+    "jquery-ui": "1.10.5",
+    "jstorage": "~0.4.8",
+    "lodash": "~3.10.1",
+    "node-uuid": ">=1.4.7",
+    "theorist": "~1.0.2"
+  },
+  "description": "Browser Plus - Real Browser in Atom",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/skandasoft/browser-plus#readme",
+  "keywords": [
+    "browser",
+    "webbrowser",
+    "web view",
+    "web-view",
+    "html preview",
+    "html",
+    "preview",
+    "preview-plus"
+  ],
+  "license": "MIT",
+  "main": "./lib/browser-plus",
+  "name": "browser-plus",
+  "optionalDependencies": {},
+  "providedServices": {
+    "browser-plus": {
+      "description": "provide logic for blocking uri",
+      "versions": {
+        "0.0.51": "provideService"
+      }
+    }
+  },
+  "readme": "# __**BrowserPlus ~ Real Browser in ATOM!!**__\n\n## Here are some feature...\n\n1. Live Preview\n2. Back/Forward Button\n3. DevTool\n4. Refresh\n5. History\n6. Favorites\n7. Simple Plugin Framework - Jquery/ContextMenu based.\n\n-![Browser-Plus](https://raw.github.com/skandasoft/browser-plus/master/browser.gif)\n\n\n\n## __FAQ__\n\n0. __I have problem loading this package?__\n\n  on your command prompt for atom directory, try uninstalling the package and reinstalling it\n\n  >   apm uninstall browser-plus\n\n  >   apm install browser-plus\n\n  if there is package dependency issue(jquery.autocomplete.js no found error messages etc) try\n\n  >   delete the jquery-ui directory under node_modules and\n  >   npm install --> in the browser-plus directory. This will install all dependency\n  >   \n  >   if you still have issues with jquery.autocomplete.\n  >   apm rebuild-module-cache\n\n\n2. __How to open browser in atom?__\n\n   ctrl+shift+p(cmd+shift+p) Browser Plus: Open. It opens the home page(maintained in the settings) or http://www.google.com.\n\n3. __How to open the current file in the brower-plus?__\n\n   ctrl+shift+p(cmd+shift+p) Browser Plus: OpenCurrent\n\n4. __Is it possible to hide the URL Bar?__\n\n   Yes. ctrl+shift+p(cmd+shift+p) Browser Plus View: toggleURLBar/F11. You need to have the browser highlighted when performing the action.\n\n5. __How to Favoritize/UnFavaritize an URL?__\n\n   On the browser urlbar click on the star to favoritize it. And click on the star if you need to UnFavaritize it/ to remove from the favoritized dropdown.\n\n6. __How to View favoritized URLs?__\n\n   ctrl+shift+p(cmd+shift+p) Browser Plus: Fav. This would open an dropdown selection of Favoritized URL. Or click on the down arrow next to the url bar on the left side.\n\n7. __How to View Browser Plus History?__\n\n   ctrl+shift+p(cmd+shift+p) Browser Plus: History/click on the button icon on the url toolbar. Opens a browser window with the URLs browsed. It is possible to delete the entire history by clicking clear history button in the webpage/delete individual entry by clicking on trash can/delete dates by clicking on the trash can by the side of dates.\n\n8. __How to  open developer tool for the browser?__\n\n   Press the function key f12/on the clicking on the settings icon on the webpage. Jquery is added for free if it is not available. So you can perform DOM activities.\n\n9. __How to show live changes(as soon as you save file) to show up as we are  viewing a file?__\n\n   Press the lighting icon. It is a toggle button ie., same button can used on switching on to live view/stop live view. Any save of any window would refresh the window. So css file window/js file window saved would be reflected on save.\n\n10. __Is it possible to print the webpage?__\n\n    Yes. Click on the print icon.\n\n11. __Is BrowserPlus used in any other packages?__\n\n    [**Navigate**][1] ( http://atom.io/packages/navigate )\n\n     This package help in navigating/links on html file. when you press f2 on a html filename it opens up the browser. There are other keys you can use. Here are some of the default key combinations that are available now when Navigate Package is installed along with BrowserPlus\n\n     ```javascript\n     'F1':\n       title: 'F1 - DevDocs Help'\n       type: 'string'\n       default: 'http://devdocs.io/#q=&searchterm'\n\n     'CTRL-F1':\n       title: 'Ctrl-F1 - Google Help'\n       type: 'string'\n       default: 'https://www.google.com/search?q=&searchterm'\n\n     'CTRL-F2':\n       title: 'Stack Overflow Search'\n       type: 'string'\n       default: 'http://stackoverflow.com/search?q=&searchterm'\n\n     'CTRL-F3':\n       title: 'AtomIO Search'\n       type: 'string'\n       default: 'https://atom.io/docs/api/search/latest?q=&searchterm'\n     ```\n     __Checkout [Navigate][1]__\n\n12. __Can I add custom key combinations to my weburls?__\n\n     Yes!! you can.The word under cursor is available in the field searchterm. For eg when F1 is pressed, help for that keyword, are provided through [devdocs][2] using the config\n\n     ``` javascript\n      default: 'http://devdocs.io/#q=&searchterm'\n     ```\n\n     __Checkout [Navigate][1]__\n\n13. __Can I preview jsp/php/express/django and other frameworks or from localhost in BrowserPlus?__\n\n    Yes. Absolutely. You can install this plugin called __[PP][3](http://atom.io/packages/pp)__. This is used to preview the files. Check more info @ __[PP][8]__\n\n14. __Can I get hyperLive(show html changes as I type) preview of the current file?__\n\n    Previews can be done using __PP__ [preview plus][3]. This Plugin user BrowserPlus to visualize html file and allows for live/hyperLive options + able to preview in different formats.\n\n15. __How can I call BrowserPlus from my plugin?__\n\n    atom.workspace.open following by url and you can pass options just as you would do to open a file using atom. If you file starts with http,https or localhost it would automatically open in the browser-plus window.\n\n16. __Is there a way enhance the functionality of BrowserPlus/Plugin system for BrowserPlus?__\n\n    you can build a plugin for browserplus. It is very simple. Checkout [browser-plus-zoom][5] or [browser-plus-open-new-window][9] or [browser-plus-block][6]. The naming convention for the plugin is browser-plus-yourpluginname.\n    browser-plus provides a service called consumeAddPlugin which can be put under your plugin\n    ``` javascript\n      \"consumedServices\": {\n        \"browser-plus\": {\n          \"versions\": {\n            \">=0.0.0\": \"consumeAddPlugin\"\n          }\n        }\n      }\n    ```\n    in order to add your plugin to browser-plus pass the details in json format\n\n    \"onInit\" --> initializes the browser with your script that will be loaded once the browser is opened\n\n    \"js\" --> load an/array of javascripts both from your resources directory under your package/ from cdns\n\n    \"css\" --> load an/array of css both from your resources directory under your package/ from cdns\n\n    \"menus\" --> this can be a single object /array of object in the following format. The plugin can be displayed as context menu or accessed using key combinations.\n\n    \"menu-ctrlkey\" --> use to invoke you plugin (it can be any key combination)\n\n    \"menu-fn\" --> this is where the code for you plugin goes . for your convience jQuery is already loaded/notifyBar(https://github.com/dknight/jQuery-Notify-bar)/jStorage\n     another plugin(http://www.jstorage.info/) is loaded.\n\n    your function can be invoked using a key combination/from context menu. If you want it to be a context menu\n\n    \"name\": \"name of the menu\"\n\n    \"selector\": \"for which the context menu would appear, can be multiple and be separated by ','\"\n\n    \"selectorFilter\": \"a function which would return boolean. if for some reason you want some filter for the selector passed it can be done by sending boolean back\"\n\n    The best way make a plugin is copy the browser-plus-open-new-window/browser-plus-zoom and testing with your code.\n\n    And you can do a PR on FAQ for browserplus to update your plugin details :).\n\n17. __what browser-plus plugins are availble?__\n\n    Look/search for browser-plus- for plugins. That will be the name convention for browserplus plugins.\n\n    1. [browser-plus-zoom][5]\n    2. [browser-plus-new-window][9]\n    3. [browser-plus-find][7]\n    4. [browser-plus-block][6]\n\n    [browser-plus-zoom][5] helps to zoom in /out of the website(ctr++ or ctr--).\n\n    [browser-plus-block][6] helps in maintaining particular websites from opening(self restraint)\n\n    [browser-plus-find][7] helps in searching in the webpage.\n\n    [browser-plus-new-window][9] open link in window/tab.\n\n    Your next browser-plus plugin goes here....\n\n18. __when opening search website like google/stackoverflow, I don't want multiple search browsers open. Is it possible to open in the same window?__\n\n    Yes. check the setting for openInSameWindow.currently an array of website (google/stackoverflow)\n\n19. __Calling BrowserPlus from contextMenu opens the home page. Can I make to open the current file?__\n\n    Check the setting. 'Show Current File'. It is on by default.\n\n20. __Can I block Youtube/any website? I get distracted while working.__\n\n    yes. Check out [browser-plus-block][6](http://atom.io/packages/browser-plus-block) plugin.\n\n21. __Can I use this browser like chrome to search on the toolbar?__\n\n    Yes. As you type more than 2 character the dropdown of search results are shown from bing. Once you click on the result it searches in google and bring the results. if you don't choose any of it and press enter and if it is url it would go to that url.\n\n22. __Can I view documentation/help for languages?___\n\n    Yes. [Naviagate Plugin][1] does that. You can press f1 and it would show the devdocs help for the word under the cursor.Check [Navigate][1] for more info.\n\n23. __How can I make browser-plus better?__\n\n    PRs are welcome.Any issue reported would make this a better plugin. This FAQ can be updated with the browser-plus-plugins.\n\n\n[1]: http://atom.io/packages/Navigate\n[2]: http://devdocs.io\n[3]: http://atom.io/packages/pp\n[4]: http://atom.io/packages/open-in-browsers\n[5]: http://atom.io/packages/browser-plus-zoom\n[6]: http://atom.io/packages/browser-plus-block\n[7]: http://atom.io/packages/browser-plus-find\n[8]: http://atom.io/packages/pp/readme.md\n[9]: http://atom.io/packages/pp/browser-plus-new-window\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skandasoft/browser-plus.git"
+  },
+  "version": "0.0.98"
+}

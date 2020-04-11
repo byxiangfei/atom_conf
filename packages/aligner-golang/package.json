@@ -1,0 +1,56 @@
+{
+  "_from": "https://www.atom.io/api/packages/aligner-golang/versions/0.1.0/tarball",
+  "_id": "aligner-golang@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-4LmUbZMzP0nM3owZ6JqOT7mMqOk2mzrjM3oVHHDLoS6zch+0yuhVwBvJfCHO7EpI1btlpDNOQN3M3pEo2ci9tw==",
+  "_location": "/aligner-golang",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/aligner-golang/versions/0.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/aligner-golang/versions/0.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/aligner-golang/versions/0.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/aligner-golang/versions/0.1.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/aligner-golang/versions/0.1.0/tarball",
+  "_shasum": "d08dd60b5d319a8c0f8bbc8832b6959b940f77de",
+  "_spec": "https://www.atom.io/api/packages/aligner-golang/versions/0.1.0/tarball",
+  "_where": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/apm-install-dir-12009-70824-1ppcedp.uhadj",
+  "bugs": {
+    "url": "https://github.com/timfallmk/atom-aligner-golang/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Aligner support for Go in Atom",
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "homepage": "https://github.com/timfallmk/atom-aligner-golang#readme",
+  "keywords": [
+    "aligner",
+    "alignment",
+    "align",
+    "golang",
+    "go"
+  ],
+  "license": "GPLv3",
+  "main": "./lib/main",
+  "name": "aligner-golang",
+  "providedServices": {
+    "aligner.provider": {
+      "versions": {
+        "1.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timfallmk/atom-aligner-golang.git"
+  },
+  "version": "0.1.0"
+}

@@ -1,0 +1,57 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-mermaid/versions/3.3.1/tarball",
+  "_id": "atom-mermaid@3.3.1",
+  "_inBundle": false,
+  "_integrity": "sha512-J2tVw6AP391h51X8DrVKkOPFBabFp2jazk+OGUDGgnBVqhYd2Qi451vg1I8WUHeuZ3Ma82BN8JT4FBungTP7ZA==",
+  "_location": "/atom-mermaid",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-mermaid/versions/3.3.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-mermaid/versions/3.3.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-mermaid/versions/3.3.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-mermaid/versions/3.3.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-mermaid/versions/3.3.1/tarball",
+  "_shasum": "c810b5a87a022a40d86d2aad597df91ea6854a2e",
+  "_spec": "https://www.atom.io/api/packages/atom-mermaid/versions/3.3.1/tarball",
+  "_where": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/apm-install-dir-119323-2768-h5dr6x.b1gw7",
+  "activationCommands": {
+    "atom-workspace": "atom-mermaid:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/y-takey/atom-mermaid/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-space-pen-views": "2.2.0",
+    "d3": "4.11.0",
+    "fs-plus": "3.0.1",
+    "mermaid": "8.0.0-rc.8",
+    "underscore-plus": "1.6.6"
+  },
+  "deprecated": false,
+  "description": "Preview diagrams and flowcharts by mermaid",
+  "devDependencies": {
+    "coffeelint": "2.0.3",
+    "coffeescope2": "0.4.6"
+  },
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0",
+    "node": ">=4.2.1"
+  },
+  "homepage": "https://github.com/y-takey/atom-mermaid#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/atom-mermaid",
+  "name": "atom-mermaid",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y-takey/atom-mermaid.git"
+  },
+  "version": "3.3.1"
+}

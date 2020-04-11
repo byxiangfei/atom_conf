@@ -1,0 +1,58 @@
+{
+  "_from": "https://www.atom.io/api/packages/autocomplete-clang/versions/0.12.1/tarball",
+  "_id": "autocomplete-clang@0.12.1",
+  "_inBundle": false,
+  "_integrity": "sha512-LVip3zR8snnzFoseXCYXpmqZUvXtZJWdqdFiumV4ieG4QW9sItinGEWYMrEwH5P7DaJVEciMlrcAPgUT7XjMWQ==",
+  "_location": "/autocomplete-clang",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autocomplete-clang/versions/0.12.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autocomplete-clang/versions/0.12.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autocomplete-clang/versions/0.12.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autocomplete-clang/versions/0.12.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autocomplete-clang/versions/0.12.1/tarball",
+  "_shasum": "b70fe67d028c9ba254187f5521c79079b96dd63e",
+  "_spec": "https://www.atom.io/api/packages/autocomplete-clang/versions/0.12.1/tarball",
+  "_where": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/apm-install-dir-12009-70646-1uhpid9.pyur",
+  "activationCommands": [],
+  "bugs": {
+    "url": "https://github.com/yasuyuky/autocomplete-clang/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-select-list": "^0.7.2",
+    "clang-flags": "0.2.2",
+    "uuid": "^3.3.3"
+  },
+  "deprecated": false,
+  "description": "autocomplete for C/C++/ObjC using clang",
+  "devDependencies": {
+    "@types/atom": "^1.36.1",
+    "tslint": "^5.20.0"
+  },
+  "engines": {
+    "atom": "^1.0.0"
+  },
+  "homepage": "https://github.com/yasuyuky/autocomplete-clang#readme",
+  "license": "MIT",
+  "main": "./lib/autocomplete-clang",
+  "name": "autocomplete-clang",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provide"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasuyuky/autocomplete-clang.git"
+  },
+  "version": "0.12.1"
+}

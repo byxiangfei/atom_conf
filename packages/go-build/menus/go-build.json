@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle go-build",
+        "command": "go-build:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "go-build",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "go-build:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

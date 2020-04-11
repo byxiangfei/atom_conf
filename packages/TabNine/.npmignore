@@ -1,0 +1,11 @@
+.DS_Store
+npm-debug.log
+node_modules
+
+sig
+auth
+registration_key
+
+binaries/*
+
+package-lock.json

@@ -1,0 +1,123 @@
+{
+  "_from": "https://www.atom.io/api/packages/go-build/versions/0.2.2/tarball",
+  "_id": "go-build@0.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-lECcHiLphpEuf55PPsjQVvsfTU8jz88v6GUR6Z9GtN3fxlW9TOy/2RvMfBFEdLHSoFGziOJ0NAV2L8sr6ivatA==",
+  "_location": "/go-build",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/go-build/versions/0.2.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/go-build/versions/0.2.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/go-build/versions/0.2.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/go-build/versions/0.2.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/go-build/versions/0.2.2/tarball",
+  "_shasum": "6416fee7ea212c318e322979d7cca27ccf7046d3",
+  "_spec": "https://www.atom.io/api/packages/go-build/versions/0.2.2/tarball",
+  "_where": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/apm-install-dir-12009-70599-mva7k.sppnt",
+  "activationHooks": [
+    "language-go:grammar-used"
+  ],
+  "bugs": {
+    "url": "https://github.com/mervynrussell/go-build/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "limitCommandsToGo": {
+      "title": "Commands available only in go source",
+      "description": "Determines whether the commands of this package are only available in go source files or in all files.",
+      "type": "boolean",
+      "default": true,
+      "order": 1
+    },
+    "panelInitialVisible": {
+      "title": "Panel Initially Visible",
+      "description": "Determines whether the build panel is initially visible or not.",
+      "type": "boolean",
+      "default": false,
+      "order": 2
+    },
+    "clearOutputOnStart": {
+      "title": "Clear build output panel on start",
+      "type": "boolean",
+      "default": false,
+      "order": 3
+    },
+    "saveAllFiles": {
+      "title": "Save all files before starting build",
+      "type": "boolean",
+      "default": false,
+      "order": 4
+    }
+  },
+  "consumedServices": {
+    "go-config": {
+      "versions": {
+        "^1.0.0": "consumeGoConfig"
+      }
+    },
+    "go-get": {
+      "versions": {
+        "^2.0.0": "consumeGoGet"
+      }
+    }
+  },
+  "dependencies": {
+    "ansi-to-html": "^0.6.3",
+    "atom-package-deps": "^4.6.0",
+    "chokidar": "^1.7.0",
+    "etch": "^0.12.7",
+    "json-rpc2": "^1.0.2",
+    "redux": "^3.7.2",
+    "semver": "^5.4.1",
+    "temp": "^0.8.3",
+    "untildify": "^3.0.2"
+  },
+  "deprecated": false,
+  "description": "UI for running Go builds",
+  "deserializers": {
+    "go-build/GoBuildView": "deserializeGoBuildView"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/mervynrussell/go-build#readme",
+  "keywords": [
+    "go",
+    "go-plus",
+    "go-debug",
+    "golang",
+    "build",
+    "go-build"
+  ],
+  "license": "MIT",
+  "main": "./lib/go-build",
+  "name": "go-build",
+  "package-deps": [
+    "go-plus"
+  ],
+  "providedServices": {
+    "go-plus.view": {
+      "versions": {
+        "0.1.0": "provideGoPlusView"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mervynrussell/go-build.git"
+  },
+  "standard": {
+    "globals": [
+      "advanceClock",
+      "atom",
+      "waitsForPromise"
+    ]
+  },
+  "version": "0.2.2"
+}

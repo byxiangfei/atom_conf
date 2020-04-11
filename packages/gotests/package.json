@@ -1,0 +1,72 @@
+{
+  "_from": "https://www.atom.io/api/packages/gotests/versions/0.4.1/tarball",
+  "_id": "gotests@0.4.1",
+  "_inBundle": false,
+  "_integrity": "sha512-yswB/VGhlNU5r8bHVr6CF3P21JCFVcRC4iEnLVlgF8+4GQ4MOIiUcFZfu/V1T2eAAzJqy8nv00n62+9khTAmcw==",
+  "_location": "/gotests",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/gotests/versions/0.4.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/gotests/versions/0.4.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/gotests/versions/0.4.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/gotests/versions/0.4.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/gotests/versions/0.4.1/tarball",
+  "_shasum": "b322cadd205130dee1713363e229c9cec2aacd44",
+  "_spec": "https://www.atom.io/api/packages/gotests/versions/0.4.1/tarball",
+  "_where": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/apm-install-dir-12009-70882-1ikwdqh.y9lc",
+  "bugs": {
+    "url": "https://github.com/abulimov/atom-gotests/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "go-config": {
+      "versions": {
+        "1.0.0": "consumeGoconfig"
+      }
+    },
+    "go-get": {
+      "versions": {
+        "2.0.0": "consumeGoget"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.0.1"
+  },
+  "deprecated": false,
+  "description": "A plugin for generating better Go tests https://github.com/cweill/gotests",
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": ">=4.18.2",
+    "eslint-config-standard": "^5.1.0",
+    "eslint-plugin-promise": "^4.1.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "temp": "^0.8.3"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/abulimov/atom-gotests#readme",
+  "keywords": [
+    "golang",
+    "go",
+    "gotests"
+  ],
+  "license": "MIT",
+  "main": "./lib/gotests",
+  "name": "gotests",
+  "package-deps": [
+    "go-plus"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abulimov/atom-gotests.git"
+  },
+  "version": "0.4.1"
+}

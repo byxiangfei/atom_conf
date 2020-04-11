@@ -1,0 +1,65 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-119013-42015-1tufa8k.62wz71ra4i/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-119013-42015-1tufa8k.62wz71ra4i/package.tgz",
+        "spec": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-119013-42015-1tufa8k.62wz71ra4i/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/apm-install-dir-119013-42015-12a8oz4.lo4iqc9pb9"
+    ]
+  ],
+  "_from": "../d-119013-42015-1tufa8k.62wz71ra4i/package.tgz",
+  "_id": "json-colorer@1.0.0",
+  "_inCache": true,
+  "_location": "/json-colorer",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-119013-42015-1tufa8k.62wz71ra4i/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-119013-42015-1tufa8k.62wz71ra4i/package.tgz",
+    "spec": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-119013-42015-1tufa8k.62wz71ra4i/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-119013-42015-1tufa8k.62wz71ra4i/package.tgz",
+  "_shasum": "4d45db6af70bed3eda0765b4ab19b9832a46207e",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/d-119013-42015-1tufa8k.62wz71ra4i/package.tgz",
+  "_where": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/apm-install-dir-119013-42015-12a8oz4.lo4iqc9pb9",
+  "author": {
+    "name": "Alexis Kofman"
+  },
+  "bugs": {
+    "url": "https://github.com/akofman/json-colorer/issues"
+  },
+  "dependencies": {},
+  "description": "Color your JSON files",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/akofman/json-colorer#readme",
+  "keywords": [
+    "JSON",
+    "Syntax"
+  ],
+  "license": "MIT",
+  "name": "json-colorer",
+  "optionalDependencies": {},
+  "readme": "# json-colorer\n\n[Atom package](https://atom.io/packages/json-colorer)\n\n> Color your JSON files.\n\n![](https://cloud.githubusercontent.com/assets/579922/21888650/7a10f2a6-d8c5-11e6-92d5-523415e46905.png)\n\n## Install\n\n```sh\n$ apm install json-colorer\n```\n\nOr Settings → Packages → Search for `json-colorer`\n\n## License\n\nMIT © [Alexis Kofman](http://twitter.com/alexiskofman)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akofman/json-colorer.git"
+  },
+  "version": "1.0.0"
+}

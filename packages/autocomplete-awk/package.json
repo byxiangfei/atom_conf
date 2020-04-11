@@ -1,0 +1,53 @@
+{
+  "_from": "https://www.atom.io/api/packages/autocomplete-awk/versions/0.1.2/tarball",
+  "_id": "autocomplete-awk@0.1.2",
+  "_inBundle": false,
+  "_integrity": "sha512-s7HwUNTvh99bkUsQ6TRtXSRx3Xk1sdTr2HTCFoMcCFYJyunqZo9gYKenvgl/zcUG0YgIeb/nXLpsOxRrm/4Bsw==",
+  "_location": "/autocomplete-awk",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autocomplete-awk/versions/0.1.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autocomplete-awk/versions/0.1.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autocomplete-awk/versions/0.1.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autocomplete-awk/versions/0.1.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autocomplete-awk/versions/0.1.2/tarball",
+  "_shasum": "3c48f7bf8497af7b851c556f48929249df2df50a",
+  "_spec": "https://www.atom.io/api/packages/autocomplete-awk/versions/0.1.2/tarball",
+  "_where": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/apm-install-dir-12009-70663-11gp4gg.d36lk",
+  "bugs": {
+    "url": "https://github.com/c-steiner/autocomplete-awk/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "AWK functions and built-in variables autocompletions.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/c-steiner/autocomplete-awk#readme",
+  "keywords": [
+    "autocomplete",
+    "awk"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "autocomplete-awk",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c-steiner/autocomplete-awk.git"
+  },
+  "version": "0.1.2"
+}

@@ -1,0 +1,73 @@
+{
+  "_from": "https://www.atom.io/api/packages/gounit/versions/0.7.0/tarball",
+  "_id": "gounit@0.7.0",
+  "_inBundle": false,
+  "_integrity": "sha512-vrvq/ahwnBBSjadb7EtgaoXknCJRExMxMLM99rnXaBj0aa8wugfoPIylKWys0guVCi3S1oMRy9Pu7Lm9yi2pBw==",
+  "_location": "/gounit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/gounit/versions/0.7.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/gounit/versions/0.7.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/gounit/versions/0.7.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/gounit/versions/0.7.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/gounit/versions/0.7.0/tarball",
+  "_shasum": "e846dc74b175024a7cb850219d80e603d2d4a5e1",
+  "_spec": "https://www.atom.io/api/packages/gounit/versions/0.7.0/tarball",
+  "_where": "/private/var/folders/_4/01d5fz2s587dblm0ctndlj2r0000gn/T/apm-install-dir-12009-70862-hk94hp.omcnm",
+  "bugs": {
+    "url": "https://github.com/hexdigest/atom-gounit/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "go-config": {
+      "versions": {
+        "1.0.0": "consumeGoconfig"
+      }
+    },
+    "go-get": {
+      "versions": {
+        "2.0.0": "consumeGoget"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.0.1"
+  },
+  "deprecated": false,
+  "description": "A plugin for generating table driven Go tests https://github.com/hexdigest/gounit",
+  "devDependencies": {
+    "babel-eslint": "^6.0.0",
+    "eslint": "^2.5.1",
+    "eslint-config-standard": "^5.1.0",
+    "eslint-plugin-promise": "^1.1.0",
+    "eslint-plugin-standard": "^1.3.2",
+    "temp": "^0.8.3"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/hexdigest/atom-gounit#readme",
+  "keywords": [
+    "golang",
+    "go",
+    "gounit",
+    "gotests"
+  ],
+  "license": "MIT",
+  "main": "./lib/gounit",
+  "name": "gounit",
+  "package-deps": [
+    "go-plus"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexdigest/atom-gounit.git"
+  },
+  "version": "0.7.0"
+}

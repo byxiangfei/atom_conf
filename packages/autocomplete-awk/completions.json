@@ -1,0 +1,590 @@
+{
+  "keywords": {
+    "BEGIN": {
+      "type": "constant",
+      "rightLabel": "built-in",
+      "description": "A BEGIN rule is executed once only, before the first input record is read.",
+      "docAnchor": "Using-BEGIN_002fEND"
+    },
+    "END": {
+      "type": "constant",
+      "rightLabel": "built-in",
+      "description": "An END rule is executed once only, after all the input is read.",
+      "docAnchor": "Using-BEGIN_002fEND"
+    },
+    "ARGC": {
+      "type": "constant",
+      "rightLabel": "built-in",
+      "description": "ARGC is the number of command-line arguments present.",
+      "docAnchor": "index-ARGC_002fARGV-variables"
+    },
+    "ARGIND": {
+      "type": "constant",
+      "rightLabel": "built-in",
+      "description": "The index in ARGV of the current file being processed.",
+      "docAnchor": "index-ARGIND-variable"
+    },
+    "ARGV": {
+      "type": "constant",
+      "leftLabel": "array",
+      "rightLabel": "built-in",
+      "description": "The command-line arguments available to awk programs are stored in an array called ARGV.",
+      "docAnchor": "index-ARGC_002fARGV-variables"
+    },
+    "BINMODE": {
+      "type": "variable",
+      "rightLabel": "built-in",
+      "description": "A BEGIN rule is executed once only, before the first input record is read.",
+      "docAnchor": "index-BINMODE-variable"
+    },
+    "CONVFMT": {
+      "type": "variable",
+      "rightLabel": "built-in",
+      "description": "A string that controls the conversion of numbers to strings.",
+      "docAnchor": "index-CONVFMT-variable-1"
+    },
+    "ENVIRON": {
+      "type": "constant",
+      "rightLabel": "built-in",
+      "description": "An associative array containing the values of the environment.",
+      "docAnchor": "index-ENVIRON-array"
+    },
+    "ERRNO": {
+      "type": "constant",
+      "leftLabel": "array",
+      "rightLabel": "built-in",
+      "description": "If a system error occurs during a redirection for getline, during a read for getline, or during a close() operation, then ERRNO contains a string describing the error.",
+      "docAnchor": "index-ERRNO-variable"
+    },
+    "FIELDWIDTHS": {
+      "type": "variable",
+      "rightLabel": "built-in",
+      "description": "A space-separated list of columns that tells gawk how to split input with fixed columnar boundaries.",
+      "docAnchor": "index-FIELDWIDTHS-variable-1"
+    },
+    "FILENAME": {
+      "type": "constant",
+      "rightLabel": "built-in",
+      "description": "The name of the current input file.",
+      "docAnchor": "index-FILENAME-variable-1"
+    },
+    "FNR": {
+      "type": "constant",
+      "rightLabel": "built-in",
+      "description": "The current record number in the current file.",
+      "docAnchor": "index-FNR-variable-1"
+    },
+    "FPAT": {
+      "type": "variable",
+      "rightLabel": "built-in",
+      "description": "A regular expression (as a string) that tells gawk to create the fields based on text that matches the regular expression.",
+      "docAnchor": "index-FPAT-variable-1"
+    },
+    "FS": {
+      "type": "variable",
+      "rightLabel": "built-in",
+      "description": "The input field separator.",
+      "docAnchor": "index-FS-variable-1"
+    },
+    "FUNCTAB": {
+      "type": "constant",
+      "leftLabel": "array",
+      "rightLabel": "built-in",
+      "description": "An array whose indices and corresponding values are the names of all the built-in, user-defined, and extension functions in the program.",
+      "docAnchor": "index-FUNCTAB-array"
+    },
+    "IGNORECASE": {
+      "type": "variable",
+      "rightLabel": "built-in",
+      "description": "If IGNORECASE is nonzero or non-null, then all string comparisons and all regular expression matching are case-independent.",
+      "docAnchor": "index-IGNORECASE-variable"
+    },
+    "LINT": {
+      "type": "variable",
+      "rightLabel": "built-in",
+      "description": "When this variable is true (nonzero or non-null), gawk behaves as if the --lint command-line option is in effect.",
+      "docAnchor": "index-LINT-variable"
+    },
+    "NF": {
+      "type": "constant",
+      "rightLabel": "built-in",
+      "description": "The number of fields in the current input record.",
+      "docAnchor": "index-NF-variable-1"
+    },
+    "NR": {
+      "type": "constant",
+      "rightLabel": "built-in",
+      "description": "The number of input records awk has processed since the beginning of the program’s execution.",
+      "docAnchor": "index-NR-variable-1"
+    },
+    "OFMT": {
+      "type": "variable",
+      "rightLabel": "built-in",
+      "description": "A string that controls conversion of numbers to strings for printing with the print statement.",
+      "docAnchor": "index-OFMT-variable-2"
+    },
+    "OFS": {
+      "type": "variable",
+      "rightLabel": "built-in",
+      "description": "The output field separator.",
+      "docAnchor": "index-OFS-variable-2"
+    },
+    "ORS": {
+      "type": "variable",
+      "rightLabel": "built-in",
+      "description": "The output record separator.",
+      "docAnchor": "index-ORS-variable-1"
+    },
+    "PREC": {
+      "type": "variable",
+      "rightLabel": "built-in",
+      "description": "The working precision of arbitrary-precision floating-point numbers, 53 bits by default.",
+      "docAnchor": "index-PREC-variable"
+    },
+    "PROCINFO": {
+      "type": "constant",
+      "leftLabel": "array",
+      "rightLabel": "built-in",
+      "description": "The elements of this array provide access to information about the running awk program.",
+      "docAnchor": "index-PROCINFO-array"
+    },
+    "RLENGTH": {
+      "type": "constant",
+      "rightLabel": "built-in",
+      "description": "The length of the substring matched by the match() function.",
+      "docAnchor": "index-RLENGTH-variable"
+    },
+    "ROUNDMODE": {
+      "type": "variable",
+      "rightLabel": "built-in",
+      "description": "The rounding mode to use for arbitrary-precision arithmetic on numbers, by default \"N\".",
+      "docAnchor": "index-ROUNDMODE-variable"
+    },
+    "RS": {
+      "type": "variable",
+      "rightLabel": "built-in",
+      "description": "The input record separator.",
+      "docAnchor": "index-RS-variable-1"
+    },
+    "RSTART": {
+      "type": "constant",
+      "rightLabel": "built-in",
+      "description": "The start index in characters of the substring that is matched by the match() function.",
+      "docAnchor": "index-RSTART-variable"
+    },
+    "RT": {
+      "type": "constant",
+      "rightLabel": "built-in",
+      "description": "The input text that matched the text denoted by RS, the record separator.",
+      "docAnchor": "index-RT-variable-2"
+    },
+    "SUBSEP": {
+      "type": "variable",
+      "rightLabel": "built-in",
+      "description": "The subscript separator.",
+      "docAnchor": "index-SUBSEP-variable"
+    },
+    "SYMTAB": {
+      "type": "constant",
+      "leftLabel": "array",
+      "rightLabel": "built-in",
+      "description": "An array whose indices are the names of all defined global variables and arrays in the program.",
+      "docAnchor": "index-SYMTAB-array"
+    },
+    "TEXTDOMAIN": {
+      "type": "variable",
+      "rightLabel": "built-in",
+      "description": "Used for internationalization of programs at the awk level.",
+      "docAnchor": "index-TEXTDOMAIN-variable"
+    },
+    "and": {
+      "type": "function",
+      "snippet": "and(${1:v1}, ${2:v2})",
+      "displayText": "and(v1, v2[, ...])",
+      "description": "Return the bitwise AND of the arguments.",
+      "docAnchor": "index-and_0028_0029-function-_0028gawk_0029"
+    },
+    "asort": {
+      "type": "function",
+      "snippet": "asort(${1:source}, ${2:dest}, ${3:how})",
+      "leftLabel": "int",
+      "displayText": "asort(source[, dest, how])",
+      "description": "Sorts the values of source.",
+      "docAnchor": "index-asort_0028_0029-function-_0028gawk_0029"
+    },
+    "asorti": {
+      "type": "function",
+      "snippet": "asort(${1:source}, ${2:dest}, ${3:how})",
+      "leftLabel": "int",
+      "displayText": "asort(source[, dest, how])",
+      "description": "The asorti() function works similarly to asort(); however, the indices are sorted, instead of the values.",
+      "docAnchor": "index-asort_0028_0029-function-_0028gawk_0029"
+    },
+    "atan2": {
+      "type": "function",
+      "snippet": "atan2(${1:y}, ${2:x})",
+      "leftLabel": "float",
+      "description": "Return the arctangent of y / x in radians.",
+      "docAnchor": "index-atan2_0028_0029-function"
+    },
+    "bindtextdomain": {
+      "type": "function",
+      "snippet": "bindtextdomain(${1:directory}, ${2:domain})",
+      "leftLabel": "string",
+      "displayText": "bindtextdomain(directory[, domain])",
+      "description": "Set the directory in which gawk will look for message translation files, in case they will not or cannot be placed in the “standard” locations (e.g., during testing).",
+      "docAnchor": "index-bindtextdomain_0028_0029-function-_0028gawk_0029"
+    },
+    "break": {
+      "type": "keyword",
+      "rightLabel": "statement",
+      "description": "The break statement jumps out of the innermost for, while, or do loop that encloses it.",
+      "docAnchor": "Break-Statement"
+    },
+    "close": {
+      "type": "function",
+      "snippet": "close(${1:filename}, ${2:how})",
+      "leftLabel": "void",
+      "displayText": "close(filename[, how])",
+      "description": "Close the file filename for input or output.",
+      "docAnchor": "index-close_0028_0029-function-1"
+    },
+    "compl": {
+      "type": "function",
+      "snippet": "compl(${1:val})",
+      "description": "Return the bitwise complement of val.",
+      "docAnchor": "index-compl_0028_0029-function-_0028gawk_0029"
+    },
+    "continue": {
+      "type": "keyword",
+      "rightLabel": "statement",
+      "description": "Similar to break, the continue statement is used only inside for, while, and do loops.",
+      "docAnchor": "Continue-Statement"
+    },
+    "cos": {
+      "type": "function",
+      "snippet": "cos(${1:x})",
+      "leftLabel": "float",
+      "description": "Return the cosine of x, with x in radians.",
+      "docAnchor": "index-cos_0028_0029-function"
+    },
+    "dcgettext": {
+      "type": "function",
+      "snippet": "dcgettext(${1:string}, ${2:domain}, ${3:category})",
+      "displayText": "dcgettext(string[, domain], category]])",
+      "leftLabel": "string",
+      "description": "Return the translation of string in text domain domain for locale category category.",
+      "docAnchor": "index-dcgettext_0028_0029-function-_0028gawk_0029"
+    },
+    "dcngettext": {
+      "type": "function",
+      "snippet": "dcngettext(${1:string1}, ${2:string2}, ${3:number}, ${4:domain}, ${5:category})",
+      "displayText": "dcngettext(string1, string2, number[, domain], category]])",
+      "leftLabel": "string",
+      "description": "Return the plural form used for number of the translation of string1 and string2 in text domain domain for locale category category.",
+      "docAnchor": "index-dcngettext_0028_0029-function-_0028gawk_0029"
+    },
+    "do": {
+      "type": "keyword",
+      "snippet": "do {\n\t${2:# body}\n} while (${3:condition})",
+      "displayText": "do .. while (condition)",
+      "rightLabel": "statement",
+      "description": "The do loop executes the body once and then repeats the body as long as the condition is true.",
+      "docAnchor": "Do-Statement"
+    },
+    "exit": {
+      "type": "keyword",
+      "displayText": "exit [return code]",
+      "rightLabel": "statement",
+      "description": "The exit statement causes awk to immediately stop executing the current rule and to stop processing input; any remaining input is ignored.",
+      "docAnchor": "Exit-Statement"
+    },
+    "exp": {
+      "type": "function",
+      "snippet": "exp(${1:x})",
+      "leftLabel": "float",
+      "description": "Return the exponential of x (e ^ x) or report an error if x is out of range.",
+      "docAnchor": "index-exp_0028_0029-function"
+    },
+    "fflush": {
+      "type": "function",
+      "snippet": "fflush(${1:filename})",
+      "displayText": "fflush([filename])",
+      "leftLabel": "int",
+      "description": "Flush any buffered output associated with filename, which is either a file opened for writing or a shell command for redirecting output to a pipe or coprocess.",
+      "docAnchor": "index-fflush_0028_0029-function"
+    },
+    "for": {
+      "type": "keyword",
+      "snippet": "for (${1:init}; ${2:condition}; ${3:increment}) {\n\t${4:# body}\n}",
+      "displayText": "for (init; condition, increment)",
+      "rightLabel": "statement",
+      "description": "The for statement makes it more convenient to count iterations of a loop.",
+      "docAnchor": "For-Statement"
+    },
+    "gensub": {
+      "type": "function",
+      "snippet": "gensub(${1:regexp}, ${2:replacement}, ${3:how}, ${4:target})",
+      "displayText": "gensub(regexp, replacement, how[, target])",
+      "leftLabel": "string",
+      "description": "Search the target string target for matches of the regular expression regexp.",
+      "docAnchor": "index-gensub_0028_0029-function-_0028gawk_0029-1"
+    },
+    "gsub": {
+      "type": "function",
+      "snippet": "gsub(${1:regexp}, ${2:replacement}, ${3:target})",
+      "displayText": "gsub(regexp, replacement[, target])",
+      "leftLabel": "int",
+      "description": "Search target for all of the longest, leftmost, nonoverlapping matching substrings it can find and replace them with replacement.",
+      "docAnchor": "index-gsub_0028_0029-function-1"
+    },
+    "if": {
+      "type": "keyword",
+      "snippet": "if (${1:condition}) {\n\t${2:# then-body}\n}",
+      "displayText": "if (condition) then-body [else else-body]",
+      "rightLabel": "statement",
+      "description": "The if-else statement is awk’s decision-making statement.",
+      "docAnchor": "If-Statement"
+    },
+    "index": {
+      "type": "function",
+      "snippet": "index(${1:in}, ${2:find})",
+      "leftLabel": "int",
+      "description": "Search the string in for the first occurrence of the string find, and return the position in characters where that occurrence begins in the string in.",
+      "docAnchor": "index-index_0028_0029-function"
+    },
+    "int": {
+      "type": "function",
+      "snippet": "int(${1:x})",
+      "leftLabel": "int",
+      "description": "Return the nearest integer to x, located between x and zero and truncated toward zero.",
+      "docAnchor": "index-int_0028_0029-function"
+    },
+    "isarray": {
+      "type": "function",
+      "snippet": "isarray(${1:x})",
+      "leftLabel": "BOOL",
+      "description": "Return a true value if x is an array. Otherwise, return false.",
+      "docAnchor": "index-isarray_0028_0029-function-_0028gawk_0029"
+    },
+    "length": {
+      "type": "function",
+      "snippet": "length(${1:string})",
+      "displayText": "length([string])",
+      "leftLabel": "int",
+      "description": "Return the number of characters in string.",
+      "docAnchor": "index-length_0028_0029-function"
+    },
+    "log": {
+      "type": "function",
+      "snippet": "log(${1:x})",
+      "leftLabel": "float",
+      "description": "Return the natural logarithm of x, if x is positive; otherwise, return NaN (“not a number”) on IEEE 754 systems.",
+      "docAnchor": "index-log_0028_0029-function"
+    },
+    "lshift": {
+      "type": "function",
+      "snippet": "lshift(${1:val}, ${2:count})",
+      "description": "Return the value of val, shifted left by count bits.",
+      "docAnchor": "index-lshift_0028_0029-function-_0028gawk_0029"
+    },
+    "match": {
+      "type": "function",
+      "snippet": "match(${1:string}, ${2:regexp}, ${3:array})",
+      "displayText": "match(string, regexp[, array])",
+      "leftLabel": "int",
+      "description": "Search string for the longest, leftmost substring matched by the regular expression regexp and return the character position (index) at which that substring begins (one, if it starts at the beginning of string). If no match is found, return zero.",
+      "docAnchor": "index-match_0028_0029-function"
+    },
+    "mktime": {
+      "type": "function",
+      "snippet": "mktime(${1:datespec})",
+      "leftLabel": "int",
+      "description": "Turn datespec into a timestamp in the same form as is returned by systime().",
+      "docAnchor": "index-mktime_0028_0029-function-_0028gawk_0029"
+    },
+    "next": {
+      "type": "keyword",
+      "rightLabel": "statement",
+      "description": "The next statement forces awk to immediately stop processing the current record and go on to the next record.",
+      "docAnchor": "Next-Statement"
+    },
+    "nextfile": {
+      "type": "keyword",
+      "rightLabel": "statement",
+      "description": "The nextfile statement is similar to the next statement. However, instead of abandoning processing of the current record, the nextfile statement instructs awk to stop processing the current data file.",
+      "docAnchor": "Nextfile-Statement"
+    },
+    "or": {
+      "type": "function",
+      "snippet": "or(${1:v1}, ${2:v2})",
+      "displayText": "or(v1, v2[, ...])",
+      "description": "Return the bitwise OR of the arguments.",
+      "docAnchor": "index-or_0028_0029-function-_0028gawk_0029"
+    },
+    "patsplit": {
+      "type": "function",
+      "snippet": "patsplit(${1:string}, ${2:array}[, ${3:fieldpat}[, ${4:seps}]])",
+      "displayText": "patsplit(string, array[, fieldpat[, seps]])",
+      "leftLabel": "int",
+      "description": "Divide string into pieces defined by fieldpat and store the pieces in array and the separator strings in the seps array.",
+      "docAnchor": "index-patsplit_0028_0029-function-_0028gawk_0029"
+    },
+    "print": {
+      "type": "keyword",
+      "snippet": "print ",
+      "rightLabel": "statement",
+      "displayText": "print item1, item2, ...",
+      "description": "Use the print statement to produce output with simple, standardized formatting.",
+      "docAnchor": "Print"
+    },
+    "printf": {
+      "type": "keyword",
+      "snippet": "printf ",
+      "rightLabel": "statement",
+      "displayText": "printf format, item1, item2, ...",
+      "description": "For more precise control over the output format than what is provided by print, use printf.",
+      "docAnchor": "Printf"
+    },
+    "rand": {
+      "type": "function",
+      "snippet": "rand()",
+      "leftLabel": "float",
+      "description": "Return a random number.",
+      "docAnchor": "index-rand_0028_0029-function"
+    },
+    "return": {
+      "type": "keyword",
+      "displayText": "return [expression]",
+      "rightLabel": "statement",
+      "description": "This statement returns control to the function calling part of the awk program.",
+      "docAnchor": "Return-Statement"
+    },
+    "rshift": {
+      "type": "function",
+      "snippet": "rshift(${1:val}, ${2:count})",
+      "description": "Return the value of val, shifted right by count bits.",
+      "docAnchor": "index-rshift_0028_0029-function-_0028gawk_0029"
+    },
+    "sin": {
+      "type": "function",
+      "snippet": "sin(${1:x})",
+      "leftLabel": "float",
+      "description": "Return the sine of x, with x in radians.",
+      "docAnchor": "index-sin_0028_0029-function"
+    },
+    "split": {
+      "type": "function",
+      "snippet": "split(${1:string}, ${2:array}[, ${3:fieldsep}[, ${4:seps}]])",
+      "displayText": "split(string, array[, fieldsep[, seps]])",
+      "leftLabel": "int",
+      "description": "Divide string into pieces separated by fieldsep and store the pieces in array and the separator strings in the seps array.",
+      "docAnchor": "index-split_0028_0029-function"
+    },
+    "sprintf": {
+      "type": "function",
+      "snippet": "sprintf(${1:format}, ${2:expression1})",
+      "displayText": "sprintf(format, expression1, ...)",
+      "leftLabel": "string",
+      "description": "Return (without printing) the string that printf would have printed out with the same arguments.",
+      "docAnchor": "index-sprintf_0028_0029-function-1"
+    },
+    "sqrt": {
+      "type": "function",
+      "snippet": "sqrt(${1:x})",
+      "leftLabel": "float",
+      "description": "Return the positive square root of x.",
+      "docAnchor": "index-sqrt_0028_0029-function"
+    },
+    "srand": {
+      "type": "function",
+      "snippet": "srand(${1:x})",
+      "displayText": "srand([x])",
+      "leftLabel": "int",
+      "description": "Set the starting point, or seed, for generating random numbers to the value x.",
+      "docAnchor": "index-srand_0028_0029-function"
+    },
+    "strftime": {
+      "type": "function",
+      "snippet": "strftime(${1:format}, ${2:timestamp}, ${3:utc-flag})",
+      "displayText": "strftime([format[, timestamp[, utc-flag]]])",
+      "leftLabel": "string",
+      "description": "Format the time specified by timestamp based on the contents of the format string and return the result.",
+      "docAnchor": "index-strftime_0028_0029-function-_0028gawk_0029"
+    },
+    "strtonum": {
+      "type": "function",
+      "snippet": "strtonum(${1:str})",
+      "leftLabel": "int",
+      "description": "Examine str and return its numeric value.",
+      "docAnchor": "index-strtonum_0028_0029-function-_0028gawk_0029"
+    },
+    "sub": {
+      "type": "function",
+      "snippet": "sub(${1:regexp}, ${2:replacement}, ${3:target})",
+      "displayText": "sub(regexp, replacement[, target])",
+      "leftLabel": "int",
+      "description": "Search target, which is treated as a string, for the leftmost, longest substring matched by the regular expression regexp.",
+      "docAnchor": "index-sub_0028_0029-function-1"
+    },
+    "substr": {
+      "type": "function",
+      "snippet": "substr(${1:string}, ${2:start}, ${3:length})",
+      "displayText": "substr(string, start[, length])",
+      "leftLabel": "string",
+      "description": "Return a length-character-long substring of string, starting at character number start.",
+      "docAnchor": "index-substr_0028_0029-function"
+    },
+    "switch": {
+      "type": "keyword",
+      "snippet": "switch (${1:expression}) {\n\tcase ${2:value}:\n\t\t${3:# case-body}\n\tdefault:\n\t\t${4:#default-body}\n}",
+      "displayText": "switch (expression) ... case",
+      "rightLabel": "statement",
+      "description": "The switch statement allows the evaluation of an expression and the execution of statements based on a case match.",
+      "docAnchor": "Switch-Statement"
+    },
+    "system": {
+      "type": "function",
+      "snippet": "system(${1:command})",
+      "leftLabel": "int",
+      "description": "Execute the operating system command command and then return to the awk program. Return command’s exit status.",
+      "docAnchor": "index-system_0028_0029-function"
+    },
+    "systime": {
+      "type": "function",
+      "snippet": "systime()",
+      "leftLabel": "int",
+      "description": "Return the current time as the number of seconds since the system epoch.",
+      "docAnchor": "index-systime_0028_0029-function-_0028gawk_0029"
+    },
+    "tolower": {
+      "type": "function",
+      "snippet": "tolower(${1:string})",
+      "leftLabel": "string",
+      "description": "Return a copy of string, with each uppercase character in the string replaced with its corresponding lowercase character.",
+      "docAnchor": "index-tolower_0028_0029-function"
+    },
+    "toupper": {
+      "type": "function",
+      "snippet": "toupper(${1:string})",
+      "leftLabel": "string",
+      "description": "Return a copy of string, with each lowercase character in the string replaced with its corresponding uppercase character.",
+      "docAnchor": "index-toupper_0028_0029-function"
+    },
+    "while": {
+      "type": "keyword",
+      "snippet": "while (${1:condition}) {\n\t${2:# body}\n}",
+      "displayText": "while (condition)",
+      "rightLabel": "statement",
+      "description": "The while statement is the simplest looping statement in awk. It repeatedly executes a statement as long as a condition is true.",
+      "docAnchor": "While-Statement"
+    },
+    "xor": {
+      "type": "function",
+      "snippet": "xor(${1:v1}, ${2:v2})",
+      "displayText": "xor(v1, v2[, ...])",
+      "description": "Return the bitwise XOR of the arguments.",
+      "docAnchor": "index-xor_0028_0029-function-_0028gawk_0029"
+    }
+  }
+}

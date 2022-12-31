@@ -37,7 +37,7 @@
   "deprecated": false,
   "description": "Preview diagrams and flowcharts by mermaid",
   "devDependencies": {
-    "coffeelint": "2.0.3",
+    "coffeelint": "2.1.0",
     "coffeescope2": "0.4.6"
   },
   "engines": {
